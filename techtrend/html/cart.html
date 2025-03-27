@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Phần head tương tự trang chủ -->
+</head>
+<body>
+    <!-- Header giống trang chủ -->
+
+    <main class="cart-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> &raquo; <span>Giỏ hàng</span>
+            </div>
+            
+            <h1>Giỏ hàng của bạn</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="header-product">Sản phẩm</div>
+                        <div class="header-price">Đơn giá</div>
+                        <div class="header-quantity">Số lượng</div>
+                        <div class="header-total">Thành tiền</div>
+                        <div class="header-action">Thao tác</div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-product">
+                            <img src="images/products/iphone14.jpg" alt="iPhone 14 Pro Max">
+                            <div class="product-info">
+                                <h3>iPhone 14 Pro Max 128GB</h3>
+                                <p>Màu: Tím</p>
+                            </div>
+                        </div>
+                        <div class="item-price">28.990.000đ</div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <div class="item-total">28.990.000đ</div>
+                        <div class="item-action">
+                            <button class="remove-item"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Thêm các sản phẩm khác trong giỏ hàng -->
+                    
+                    <div class="cart-actions">
+                        <button class="continue-shopping">Tiếp tục mua hàng</button>
+                        <button class="clear-cart">Xóa giỏ hàng</button>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Tóm tắt đơn hàng</h3>
+                    <div class="summary-row">
+                        <span>Tạm tính:</span>
+                        <span>28.990.000đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Giảm giá:</span>
+                        <span>-1.000.000đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Phí vận chuyển:</span>
+                        <span>0đ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Tổng cộng:</span>
+                        <span>27.990.000đ</span>
+                    </div>
+                    
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Nhập mã giảm giá">
+                        <button class="apply-coupon">Áp dụng</button>
+                    </div>
+                    
+                    <button class="checkout-btn">Tiến hành thanh toán</button>
+                    
+                    <div class="payment-methods">
+                        <img src="images/payments/vnpay.png" alt="VNPay">
+                        <img src="images/payments/momo.png" alt="Momo">
+                        <img src="images/payments/visa.png" alt="Visa">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommended-products">
+                <h3>Có thể bạn sẽ thích</h3>
+                <div class="product-grid">
+                    <!-- Sản phẩm đề xuất -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer giống trang chủ -->
+    
+    <script src="js/cart.js"></script>
+</body>
+</html>

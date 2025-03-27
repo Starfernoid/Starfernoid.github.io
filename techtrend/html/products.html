@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Phần head tương tự trang chủ -->
+</head>
+<body>
+    <!-- Header giống trang chủ -->
+
+    <main class="products-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> &raquo; <span>Sản phẩm</span>
+            </div>
+            
+            <div class="products-header">
+                <h1>Sản phẩm công nghệ</h1>
+                <div class="sort-filter">
+                    <select id="sort-by">
+                        <option value="popular">Sắp xếp theo: Phổ biến</option>
+                        <option value="price-asc">Giá: Thấp đến cao</option>
+                        <option value="price-desc">Giá: Cao đến thấp</option>
+                        <option value="rating">Đánh giá cao</option>
+                        <option value="newest">Mới nhất</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-sidebar">
+                <!-- Bộ lọc sản phẩm -->
+                <div class="filter-section">
+                    <h3>Danh mục</h3>
+                    <ul class="category-filter">
+                        <li><a href="#" class="active">Tất cả</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Tai nghe</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <!-- Thêm danh mục khác -->
+                    </ul>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Mức giá</h3>
+                    <div class="price-filter">
+                        <input type="range" min="0" max="50000000" value="50000000" class="price-slider" id="price-range">
+                        <div class="price-range-display">
+                            <span id="min-price">0đ</span> - <span id="max-price">50.000.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Đánh giá</h3>
+                    <div class="rating-filter">
+                        <div class="star-option">
+                            <input type="checkbox" id="rating-5">
+                            <label for="rating-5">★★★★★</label>
+                        </div>
+                        <!-- Thêm các mức đánh giá khác -->
+                    </div>
+                </div>
+                
+                <button class="apply-filter">Áp dụng bộ lọc</button>
+                <button class="reset-filter">Xóa bộ lọc</button>
+            </div>
+            
+            <div class="products-main">
+                <div class="product-grid">
+                    <!-- Sản phẩm sẽ được tải động bằng JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <a href="#" class="page-nav"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer giống trang chủ -->
+    
+    <script src="js/products.js"></script>
+</body>
+</html>

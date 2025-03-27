@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Phần head tương tự trang chủ -->
+</head>
+<body>
+    <!-- Header giống trang chủ -->
+
+    <main class="promotions-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> &raquo; <span>Khuyến mãi</span>
+            </div>
+            
+            <h1>Chương trình khuyến mãi</h1>
+            
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <h2>Giảm giá lên đến 50%</h2>
+                    <p>Cho tất cả các phụ kiện công nghệ khi mua kèm điện thoại hoặc laptop</p>
+                    <div class="promo-timer">
+                        <p>Kết thúc sau:</p>
+                        <div class="countdown">
+                            <span class="days">02</span> ngày 
+                            <span class="hours">12</span> giờ 
+                            <span class="minutes">45</span> phút
+                        </div>
+                    </div>
+                    <a href="products.html" class="promo-button">Mua ngay</a>
+                </div>
+                <div class="promo-image">
+                    <img src="images/promos/summer-sale.jpg" alt="Summer Sale">
+                </div>
+            </div>
+            
+            <div class="promo-games">
+                <h2>Mini Game - Nhận ngay ưu đãi</h2>
+                
+                <div class="game-tabs">
+                    <button class="game-tab active" data-tab="wheel">Vòng quay may mắn</button>
+                    <button class="game-tab" data-tab="scratch">Trúng thưởng</button>
+                </div>
+                
+                <div class="game-container" id="wheel-game">
+                    <div class="wheel-container">
+                        <div class="wheel"></div>
+                        <div class="wheel-center"></div>
+                        <button class="spin-button">QUAY</button>
+                    </div>
+                    <div class="wheel-prizes">
+                        <h3>Giải thưởng:</h3>
+                        <ul>
+                            <li>Giảm 50%</li>
+                            <li>Giảm 20%</li>
+                            <li>Giảm 10%</li>
+                            <li>Voucher 500.000đ</li>
+                            <li>Miễn phí vận chuyển</li>
+                            <li>Quay lại lần nữa</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="game-container hidden" id="scratch-game">
+                    <div class="scratch-card">
+                        <canvas id="scratch-canvas"></canvas>
+                        <div class="scratch-prize hidden">
+                            <h3>Chúc mừng!</h3>
+                            <p>Bạn đã nhận được voucher <span class="prize-amount">500.000đ</span></p>
+                            <button class="use-voucher">Sử dụng ngay</button>
+                        </div>
+                    </div>
+                    <div class="scratch-info">
+                        <h3>Cách chơi:</h3>
+                        <p>Dùng chuột cào lớp phủ để xem giải thưởng của bạn</p>
+                        <p>Mỗi tài khoản được chơi 1 lần/ngày</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="promo-products">
+                <h2>Sản phẩm đang khuyến mãi</h2>
+                <div class="product-grid">
+                    <!-- Sản phẩm khuyến mãi -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer giống trang chủ -->
+    
+    <script src="js/games.js"></script>
+</body>
+</html>

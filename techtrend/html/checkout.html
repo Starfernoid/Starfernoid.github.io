@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Phần head tương tự trang chủ -->
+</head>
+<body>
+    <!-- Header giống trang chủ -->
+
+    <main class="checkout-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> &raquo; 
+                <a href="cart.html">Giỏ hàng</a> &raquo; 
+                <span>Thanh toán</span>
+            </div>
+            
+            <div class="checkout-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-title">Thông tin giao hàng</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-title">Phương thức thanh toán</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-title">Hoàn tất đơn hàng</span>
+                </div>
+            </div>
+            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <h2>Thông tin giao hàng</h2>
+                    <form id="shipping-form">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên*</label>
+                            <input type="text" id="fullname" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại*</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Địa chỉ*</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Tỉnh/Thành phố*</label>
+                                <select id="city" required>
+                                    <option value="">Chọn tỉnh/thành phố</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <!-- Thêm các tỉnh thành khác -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="district">Quận/Huyện*</label>
+                                <select id="district" required>
+                                    <option value="">Chọn quận/huyện</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="note">Ghi chú đơn hàng</label>
+                            <textarea id="note" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group shipping-method">
+                            <h3>Phương thức vận chuyển</h3>
+                            <div class="radio-group">
+                                <input type="radio" id="standard-shipping" name="shipping" checked>
+                                <label for="standard-shipping">
+                                    <span class="method-name">Giao hàng tiêu chuẩn</span>
+                                    <span class="method-desc">Nhận hàng trong 2-3 ngày</span>
+                                    <span class="method-price">Miễn phí</span>
+                                </label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="express-shipping" name="shipping">
+                                <label for="express-shipping">
+                                    <span class="method-name">Giao hàng nhanh</span>
+                                    <span class="method-desc">Nhận hàng trong 24h</span>
+                                    <span class="method-price">30.000đ</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="back-to-cart">Quay lại giỏ hàng</button>
+                            <button type="button" class="next-step">Tiếp tục</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Bước 2: Thanh toán -->
+                    <div class="payment-methods hidden">
+                        <h2>Phương thức thanh toán</h2>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <input type="radio" id="cod" name="payment" checked>
+                                <label for="cod">
+                                    <img src="images/payments/cod.png" alt="COD">
+                                    <span>Thanh toán khi nhận hàng (COD)</span>
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="vnpay" name="payment">
+                                <label for="vnpay">
+                                    <img src="images/payments/vnpay.png" alt="VNPay">
+                                    <span>VNPay</span>
+                                </label>
+                            </div>
+                            <!-- Thêm các phương thức thanh toán khác -->
+                        </div>
+                        
+                        <div class="order-review">
+                            <h3>Đơn hàng của bạn</h3>
+                            <div class="order-items">
+                                <!-- Các sản phẩm trong đơn hàng -->
+                            </div>
+                            <div class="order-totals">
+                                <div class="total-row">
+                                    <span>Tạm tính:</span>
+                                    <span>27.990.000đ</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Phí vận chuyển:</span>
+                                    <span>0đ</span>
+                                </div>
+                                <div class="total-row grand-total">
+                                    <span>Tổng cộng:</span>
+                                    <span>27.990.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="prev-step">Quay lại</button>
+                            <button type="button" class="place-order">Đặt hàng</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bước 3: Hoàn tất -->
+                    <div class="order-complete hidden">
+                        <div class="complete-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Đặt hàng thành công!</h2>
+                        <p class="order-number">Mã đơn hàng của bạn: <strong>TT202300123</strong></p>
+                        <p>Cảm ơn bạn đã mua hàng tại TechTrend. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+                        
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Ngày đặt hàng:</span>
+                                <span>15/06/2023</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Phương thức thanh toán:</span>
+                                <span>Thanh toán khi nhận hàng</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tổng cộng:</span>
+                                <span>27.990.000đ</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Địa chỉ giao hàng:</span>
+                                <span>123 Đường Tech, Quận 1, TP.HCM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="complete-actions">
+                            <a href="products.html" class="continue-shopping">Tiếp tục mua sắm</a>
+                            <a href="#" class="track-order">Theo dõi đơn hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer giống trang chủ -->
+    
+    <script src="js/checkout.js"></script>
+</body>
+</html>
